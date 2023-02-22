@@ -110,7 +110,7 @@ input {
   display: block;
   width: 100%;
   height: 35px;
-  border: turquoise 2px dashed;
+  border: 2px solid black;
   margin-bottom: 10px;
   padding-left: 10px;
 }

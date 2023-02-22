@@ -17,17 +17,17 @@ const routes = [
     component: Admin,
     children: [
       {
-        path: "/products",
+        path: "products",
         component: Products,
         name: "Products",
       },
       {
-        path: "/products/create",
+        path: "products/create",
         component: ProductCreate,
         name: "ProductCreate",
       },
       {
-        path: "/products/:id/edit",
+        path: "products/:id/edit",
         component: ProductEdit,
         name: "ProductEdit",
         props: true, // id we will be getting as a props

@@ -1,4 +1,8 @@
 <template>
+  <router-link :to="{ name: 'ProductCreate' }" class="btn"
+    >Add Products</router-link
+  >
+
   <table>
     <thead>
       <tr>
@@ -14,6 +18,12 @@
         <td>{{ product.title }}</td>
         <td><img :src="product.image" :alt="product.title" width="90" /></td>
         <td>
+          <router-link
+            :to="{ name: 'ProductEdit', params: { id: product.id } }"
+            class="btn"
+            >Edit</router-link
+          >
+
           <button @click="del(product.id)" class="btn btn-del">Delete</button>
         </td>
       </tr>
@@ -45,5 +55,3 @@ export default {
   },
 };
 </script>
-
-<style></style>
